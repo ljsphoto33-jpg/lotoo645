@@ -1,0 +1,651 @@
+==============================================
+ build failed at Tue Sep  8 02:27:51 UTC 2026
+==============================================
+
+----- last 400 lines of build.log -----
+    self.run()
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 1709, in wrap
+    fn(*rgs, **kwargs)
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 2720, in background_thread
+    handle_exit_code(exit_code)
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 2411, in fn
+    return self.command.handle_command_exit_code(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 820, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi/autogen.sh
+
+  STDOUT:
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal -I m4
+autoreconf: running: /usr/bin/autoconf
+configure.ac:8: warning: The macro `AC_CANONICAL_SYSTEM' is obsolete.
+configure.ac:8: You should run autoupdate.
+./lib/autoconf/general.m4:2081: AC_CANONICAL_SYSTEM is expanded from...
+configure.ac:8: the top level
+configure.ac:41: warning: The macro `AC_PROG_LIBTOOL' is obsolete.
+configure.ac:41: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:41: the top level
+configure.ac:74: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:74: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+acinclude.m4:3: AC_FUNC_MMAP_BLACKLIST is expanded from...
+configure.ac:74: the top level
+configure.ac:91: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:91: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:91: the top level
+configure.ac:118: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:118: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+m4/asmcfi.m4:1: GCC_AS_CFI_PSEUDO_OP is expanded from...
+configure.ac:118: the top level
+configure.ac:122: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:122: You should run autoupdate.
+./lib/autoconf/general.m4:2920: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:122: the top level
+configure.ac:138: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:138: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:138: the top level
+configure.ac:185: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:185: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:185: the top level
+configure.ac:310: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:310: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:310: the top level
+configure.ac:418: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:418: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:418: warning: The macro `AC_PROG_LD' is obsolete.
+configure.ac:418: You should run autoupdate.
+m4/libtool.m4:3361: AC_PROG_LD is expanded from...
+acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:418: warning: The macro `AC_TRY_RUN' is obsolete.
+configure.ac:418: You should run autoupdate.
+./lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:418: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:418: You should run autoupdate.
+./lib/autoconf/general.m4:2920: AC_TRY_LINK is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:215: error: possibly undefined macro: LT_SYS_SYMBOL_USCORE
+      If this token and others are legitimate, please use m4_pattern_allow.
+      See the Autoconf documentation.
+autoreconf: error: /usr/bin/autoconf failed with exit status: 1
+
+
+  STDERR:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 1290, in <module>
+    main()
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/entrypoints.py", line 18, in main
+    ToolchainCL()
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 721, in __init__
+    getattr(self, command)(args)
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 104, in wrapper_func
+    build_dist_from_args(ctx, dist, args)
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/toolchain.py", line 163, in build_dist_from_args
+    build_recipes(build_order, python_modules, ctx,
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/build.py", line 530, in build_recipes
+    recipe.build_arch(arch)
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/recipes/libffi/__init__.py", line 28, in build_arch
+    shprint(sh.Command('./autogen.sh'), _env=env)
+  File "/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android/pythonforandroid/logger.py", line 174, in shprint
+    for line in output:
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 876, in __next__
+    self.wait()
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 793, in wait
+    self.handle_command_exit_code(exit_code)
+  File "/home/runner/.local/lib/python3.11/site-packages/sh/__init__.py", line 820, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_1: 
+
+  RAN: /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/libffi/arm64-v8a__ndk_target_24/libffi/autogen.sh
+
+  STDOUT:
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal -I m4
+autoreconf: running: /usr/bin/autoconf
+configure.ac:8: warning: The macro `AC_CANONICAL_SYSTEM' is obsolete.
+configure.ac:8: You should run autoupdate.
+./lib/autoconf/general.m4:2081: AC_CANONICAL_SYSTEM is expanded from...
+configure.ac:8: the top level
+configure.ac:41: warning: The macro `AC_PROG_LIBTOOL' is obsolete.
+configure.ac:41: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:41: the top level
+configure.ac:74: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:74: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+acinclude.m4:3: AC_FUNC_MMAP_BLACKLIST is expanded from...
+configure.ac:74: the top level
+configure.ac:91: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:91: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:91: the top level
+configure.ac:118: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:118: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+m4/asmcfi.m4:1: GCC_AS_CFI_PSEUDO_OP is expanded from...
+configure.ac:118: the top level
+configure.ac:122: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:122: You should run autoupdate.
+./lib/autoconf/general.m4:2920: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:122: the top level
+configure.ac:138: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:138: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:138: the top level
+configure.ac:185: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:185: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:185: the top level
+configure.ac:310: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:310: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:310: the top level
+configure.ac:418: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:418: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:418: warning: The macro `AC_PROG_LD' is obsolete.
+configure.ac:418: You should run autoupdate.
+m4/libtool.m4:3361: AC_PROG_LD is expanded from...
+acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:418: warning: The macro `AC_TRY_RUN' is obsolete.
+configure.ac:418: You should run autoupdate.
+./lib/autoconf/general.m4:2997: AC_TRY_RUN is expanded from...
+acinclude.m4:251: LIBFFI_CHECK_LINKER_FEATURES is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:418: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:418: You should run autoupdate.
+./lib/autoconf/general.m4:2920: AC_TRY_LINK is expanded from...
+acinclude.m4:353: LIBFFI_ENABLE_SYMVERS is expanded from...
+configure.ac:418: the top level
+configure.ac:215: error: possibly undefined macro: LT_SYS_SYMBOL_USCORE
+      If this token and others are legitimate, please use m4_pattern_allow.
+      See the Autoconf documentation.
+autoreconf: error: /usr/bin/autoconf failed with exit status: 1
+
+
+  STDERR:
+
+[0m[1;34m# Android packages installation done.[0m
+[0m[1;30m# Run '/opt/hostedtoolcache/Python/3.11.16/x64/bin/python -m pythonforandroid.toolchain aab -h --color=always --storage-dir=/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a --ndk-api=24 --ignore-setup-py --debug' ...[0m
+[0m[1;30m# Cwd /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android[0m
+[0m[1;34m# Check application requirements[0m
+[0m[1;34m# Compile platform[0m
+[0m[1;30m# Run '/opt/hostedtoolcache/Python/3.11.16/x64/bin/python -m pythonforandroid.toolchain create --dist_name=lotto645 --bootstrap=sdl2 --requirements=python3,kivy==2.3.1,openssl,certifi,charset-normalizer,idna,urllib3,requests --arch=arm64-v8a --copy-libs --color=always --storage-dir=/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a --ndk-api=24 --ignore-setup-py --debug' ...[0m
+[0m[1;30m# Cwd /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/python-for-android[0m
+[0m[1;31m# Command failed: ('/opt/hostedtoolcache/Python/3.11.16/x64/bin/python', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=lotto645', '--bootstrap=sdl2', '--requirements=python3,kivy==2.3.1,openssl,certifi,charset-normalizer,idna,urllib3,requests', '--arch=arm64-v8a', '--copy-libs', '--color=always', '--storage-dir=/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a', '--ndk-api=24', '--ignore-setup-py', '--debug')[0m
+[0m[1;31m# Error code: 1[0m
+[0m[1;31m# ENVIRONMENT:[0m
+[0m[1;31m#     SHELL = '/bin/bash'[0m
+[0m[1;31m#     SELENIUM_JAR_PATH = '/usr/share/java/selenium-server.jar'[0m
+[0m[1;31m#     CONDA = '/usr/share/miniconda'[0m
+[0m[1;31m#     GITHUB_WORKSPACE = '/home/runner/work/lotoo645/lotoo645'[0m
+[0m[1;31m#     JAVA_HOME_11_X64 = '/usr/lib/jvm/temurin-11-jdk-amd64'[0m
+[0m[1;31m#     JAVA_HOME_25_X64 = '/usr/lib/jvm/temurin-25-jdk-amd64'[0m
+[0m[1;31m#     PKG_CONFIG_PATH = '/opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig'[0m
+[0m[1;31m#     GITHUB_PATH = '/home/runner/work/_temp/_runner_file_commands/add_path_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     GITHUB_ACTION = '__run_5'[0m
+[0m[1;31m#     JAVA_HOME = '/usr/lib/jvm/temurin-17-jdk-amd64'[0m
+[0m[1;31m#     GITHUB_RUN_NUMBER = '2'[0m
+[0m[1;31m#     RUNNER_NAME = 'GitHub Actions 1000000001'[0m
+[0m[1;31m#     GRADLE_HOME = '/usr/share/gradle-9.7.1'[0m
+[0m[1;31m#     GITHUB_REPOSITORY_OWNER_ID = '233521945'[0m
+[0m[1;31m#     ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE = '/opt/actionarchivecache'[0m
+[0m[1;31m#     XDG_CONFIG_HOME = '/home/runner/.config'[0m
+[0m[1;31m#     Python_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
+[0m[1;31m#     MEMORY_PRESSURE_WRITE = 'c29tZSAyMDAwMDAgMjAwMDAwMAA='[0m
+[0m[1;31m#     DOTNET_SKIP_FIRST_TIME_EXPERIENCE = '1'[0m
+[0m[1;31m#     ANT_HOME = '/usr/share/ant'[0m
+[0m[1;31m#     JAVA_HOME_8_X64 = '/usr/lib/jvm/temurin-8-jdk-amd64'[0m
+[0m[1;31m#     GITHUB_TRIGGERING_ACTOR = 'ljsphoto33-jpg'[0m
+[0m[1;31m#     pythonLocation = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
+[0m[1;31m#     GITHUB_REF_TYPE = 'branch'[0m
+[0m[1;31m#     HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS = '3650'[0m
+[0m[1;31m#     ACTIONS_RUNNER_RETURN_JOB_RESULT_FOR_HOSTED = '1'[0m
+[0m[1;31m#     ANDROID_NDK = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
+[0m[1;31m#     BOOTSTRAP_HASKELL_NONINTERACTIVE = '1'[0m
+[0m[1;31m#     PWD = '/home/runner/work/lotoo645/lotoo645'[0m
+[0m[1;31m#     PIPX_BIN_DIR = '/opt/pipx_bin'[0m
+[0m[1;31m#     LOGNAME = 'runner'[0m
+[0m[1;31m#     GITHUB_ARTIFACTS_LIST = '/home/runner/work/_temp/_runner_file_commands/artifacts_list_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     GITHUB_REPOSITORY_ID = '1360755319'[0m
+[0m[1;31m#     GITHUB_ACTIONS = 'true'[0m
+[0m[1;31m#     USE_BAZEL_FALLBACK_VERSION = 'silent:'[0m
+[0m[1;31m#     ANDROID_NDK_LATEST_HOME = '/usr/local/lib/android/sdk/ndk/29.0.14206865'[0m
+[0m[1;31m#     SYSTEMD_EXEC_PID = '1800'[0m
+[0m[1;31m#     GITHUB_SHA = '044bfa89c42ab304acae2ba4845b918c5b998218'[0m
+[0m[1;31m#     GITHUB_WORKFLOW_REF = 'ljsphoto33-jpg/lotoo645/.github/workflows/build-apk.yml@refs/heads/main'[0m
+[0m[1;31m#     POWERSHELL_DISTRIBUTION_CHANNEL = 'GitHub-Actions-Linux'[0m
+[0m[1;31m#     RUNNER_ENVIRONMENT = 'github-hosted'[0m
+[0m[1;31m#     DOTNET_MULTILEVEL_LOOKUP = '0'[0m
+[0m[1;31m#     GITHUB_REF = 'refs/heads/main'[0m
+[0m[1;31m#     RUNNER_OS = 'Linux'[0m
+[0m[1;31m#     GITHUB_REF_PROTECTED = 'false'[0m
+[0m[1;31m#     HOME = '/home/runner'[0m
+[0m[1;31m#     GITHUB_API_URL = 'https://api.github.com'[0m
+[0m[1;31m#     LANG = 'C.UTF-8'[0m
+[0m[1;31m#     GOROOT_1_25_X64 = '/opt/hostedtoolcache/go/1.25.14/x64'[0m
+[0m[1;31m#     RUNNER_TRACKING_ID = 'github_4c0bde0e-02e2-4ab9-9ce7-b0bc9a4adc2f'[0m
+[0m[1;31m#     RUNNER_ARCH = 'X64'[0m
+[0m[1;31m#     MEMORY_PRESSURE_WATCH = '/sys/fs/cgroup/system.slice/hosted-compute-agent.service/memory.pressure'[0m
+[0m[1;31m#     RUNNER_TEMP = '/home/runner/work/_temp'[0m
+[0m[1;31m#     GITHUB_STATE = '/home/runner/work/_temp/_runner_file_commands/save_state_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     EDGEWEBDRIVER = '/usr/local/share/edge_driver'[0m
+[0m[1;31m#     JAVA_HOME_21_X64 = '/usr/lib/jvm/temurin-21-jdk-amd64'[0m
+[0m[1;31m#     GITHUB_ENV = '/home/runner/work/_temp/_runner_file_commands/set_env_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     GITHUB_EVENT_PATH = '/home/runner/work/_temp/_github_workflow/event.json'[0m
+[0m[1;31m#     INVOCATION_ID = '6fe218f612b44b929a883833af197a7a'[0m
+[0m[1;31m#     GITHUB_EVENT_NAME = 'push'[0m
+[0m[1;31m#     GITHUB_RUN_ID = '34179913451'[0m
+[0m[1;31m#     JAVA_HOME_17_X64 = '/usr/lib/jvm/temurin-17-jdk-amd64'[0m
+[0m[1;31m#     ANDROID_NDK_HOME = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
+[0m[1;31m#     GITHUB_STEP_SUMMARY = '/home/runner/work/_temp/_runner_file_commands/step_summary_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     HOMEBREW_NO_AUTO_UPDATE = '1'[0m
+[0m[1;31m#     GITHUB_ACTOR = 'ljsphoto33-jpg'[0m
+[0m[1;31m#     NVM_DIR = '/home/runner/.nvm'[0m
+[0m[1;31m#     SGX_AESM_ADDR = '1'[0m
+[0m[1;31m#     GITHUB_RUN_ATTEMPT = '1'[0m
+[0m[1;31m#     ANDROID_HOME = '/usr/local/lib/android/sdk'[0m
+[0m[1;31m#     GITHUB_GRAPHQL_URL = 'https://api.github.com/graphql'[0m
+[0m[1;31m#     ACCEPT_EULA = 'Y'[0m
+[0m[1;31m#     USER = 'runner'[0m
+[0m[1;31m#     PSModulePath = '/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/7/Modules:/usr/share/az_15.6.1'[0m
+[0m[1;31m#     GITHUB_SERVER_URL = 'https://github.com'[0m
+[0m[1;31m#     PIPX_HOME = '/opt/pipx'[0m
+[0m[1;31m#     GECKOWEBDRIVER = '/usr/local/share/gecko_driver'[0m
+[0m[1;31m#     CHROMEWEBDRIVER = '/usr/local/share/chromedriver-linux64'[0m
+[0m[1;31m#     SHLVL = '1'[0m
+[0m[1;31m#     ANDROID_SDK_ROOT = '/usr/local/lib/android/sdk'[0m
+[0m[1;31m#     VCPKG_INSTALLATION_ROOT = '/usr/local/share/vcpkg'[0m
+[0m[1;31m#     GITHUB_ACTOR_ID = '233521945'[0m
+[0m[1;31m#     ACTIONS_ORCHESTRATION_ID = '84131a4e-e323-4506-bf59-08a5e6249cc7.build.__default'[0m
+[0m[1;31m#     RUNNER_TOOL_CACHE = '/opt/hostedtoolcache'[0m
+[0m[1;31m#     ImageVersion = '20260831.293.1'[0m
+[0m[1;31m#     Python3_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
+[0m[1;31m#     DOTNET_NOLOGO = '1'[0m
+[0m[1;31m#     GITHUB_ARTIFACTS = '/home/runner/work/_temp/_runner_file_commands/artifacts_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     GITHUB_WORKFLOW_SHA = '044bfa89c42ab304acae2ba4845b918c5b998218'[0m
+[0m[1;31m#     GOROOT_1_24_X64 = '/opt/hostedtoolcache/go/1.24.13/x64'[0m
+[0m[1;31m#     GITHUB_REF_NAME = 'main'[0m
+[0m[1;31m#     GITHUB_JOB = 'build'[0m
+[0m[1;31m#     LD_LIBRARY_PATH = '/opt/hostedtoolcache/Python/3.11.16/x64/lib'[0m
+[0m[1;31m#     XDG_RUNTIME_DIR = '/run/user/1001'[0m
+[0m[1;31m#     AZURE_EXTENSION_DIR = '/opt/az/azcliextensions'[0m
+[0m[1;31m#     GOROOT_1_26_X64 = '/opt/hostedtoolcache/go/1.26.7/x64'[0m
+[0m[1;31m#     GITHUB_REPOSITORY = 'ljsphoto33-jpg/lotoo645'[0m
+[0m[1;31m#     Python2_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
+[0m[1;31m#     CHROME_BIN = '/usr/bin/google-chrome'[0m
+[0m[1;31m#     ANDROID_NDK_ROOT = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
+[0m[1;31m#     GITHUB_RETENTION_DAYS = '90'[0m
+[0m[1;31m#     JOURNAL_STREAM = '9:11100'[0m
+[0m[1;31m#     RUNNER_WORKSPACE = '/home/runner/work/lotoo645'[0m
+[0m[1;31m#     GITHUB_ACTION_REPOSITORY = ''[0m
+[0m[1;31m#     HCA_CLOUD_PROVIDER = 'azure'[0m
+[0m[1;31m#     PATH = '/home/runner/.buildozer/android/platform/apache-ant-1.9.4/bin:/opt/hostedtoolcache/Python/3.11.16/x64/bin:/opt/hostedtoolcache/Python/3.11.16/x64:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'[0m
+[0m[1;31m#     GITHUB_BASE_REF = ''[0m
+[0m[1;31m#     GHCUP_INSTALL_BASE_PREFIX = '/usr/local'[0m
+[0m[1;31m#     CI = 'true'[0m
+[0m[1;31m#     SWIFT_PATH = '/usr/share/swift/usr/bin'[0m
+[0m[1;31m#     ImageOS = 'ubuntu24'[0m
+[0m[1;31m#     GITHUB_REPOSITORY_OWNER = 'ljsphoto33-jpg'[0m
+[0m[1;31m#     GITHUB_HEAD_REF = ''[0m
+[0m[1;31m#     GITHUB_ACTION_REF = ''[0m
+[0m[1;31m#     ENABLE_RUNNER_TRACING = 'true'[0m
+[0m[1;31m#     GITHUB_WORKFLOW = 'Build Android APK'[0m
+[0m[1;31m#     DEBIAN_FRONTEND = 'noninteractive'[0m
+[0m[1;31m#     GITHUB_OUTPUT = '/home/runner/work/_temp/_runner_file_commands/set_output_475d4a8d-e5ac-4460-a5b3-c7282d74fc37'[0m
+[0m[1;31m#     AGENT_TOOLSDIRECTORY = '/opt/hostedtoolcache'[0m
+[0m[1;31m#     _ = '/opt/hostedtoolcache/Python/3.11.16/x64/bin/buildozer'[0m
+[0m[1;31m#     PACKAGES_PATH = '/home/runner/.buildozer/android/packages'[0m
+[0m[1;31m#     ANDROIDSDK = '/home/runner/.buildozer/android/platform/android-sdk'[0m
+[0m[1;31m#     ANDROIDNDK = '/home/runner/.buildozer/android/platform/android-ndk-r28c'[0m
+[0m[1;31m#     ANDROIDAPI = '34'[0m
+[0m[1;31m#     ANDROIDMINAPI = '24'[0m
+[0m[1;31m# [0m
+[0m[1;31m# Buildozer failed to execute the last command[0m
+[0m[1;31m# The error might be hidden in the log above this error[0m
+[0m[1;31m# Please read the full log, and search for it before[0m
+[0m[1;31m# raising an issue with buildozer itself.[0m
+[0m[1;31m# In case of a bug report, please add a full log with log_level = 2[0m
+
+----- buildozer logs -----
+### .buildozer/android/platform/build-arm64-v8a/build/other_builds/hostpython3/desktop/hostpython3/native-build/config.log
+#define HAVE_HSTRERROR 1
+#define HAVE_GETSERVBYNAME 1
+#define HAVE_GETSERVBYPORT 1
+#define HAVE_GETHOSTBYNAME 1
+#define HAVE_GETHOSTBYADDR 1
+#define HAVE_GETPROTOBYNAME 1
+#define HAVE_INET_ATON 1
+#define HAVE_INET_NTOA 1
+#define HAVE_INET_PTON 1
+#define HAVE_GETPEERNAME 1
+#define HAVE_GETSOCKNAME 1
+#define HAVE_ACCEPT 1
+#define HAVE_BIND 1
+#define HAVE_CONNECT 1
+#define HAVE_LISTEN 1
+#define HAVE_RECVFROM 1
+#define HAVE_SENDTO 1
+#define HAVE_SETSOCKOPT 1
+#define HAVE_SOCKET 1
+#define HAVE_SETGROUPS 1
+#define HAVE_DECL_UT_NAMESIZE 1
+#define HAVE_UT_NAMESIZE 1
+#define HAVE_OPENPTY 1
+#define HAVE_LOGIN_TTY 1
+#define HAVE_FORKPTY 1
+#define HAVE_FSEEKO 1
+#define HAVE_FSTATVFS 1
+#define HAVE_FTELLO 1
+#define HAVE_STATVFS 1
+#define HAVE_DUP2 1
+#define HAVE_GETPGRP 1
+#define HAVE_SETPGRP 1
+#define HAVE_SETNS 1
+#define HAVE_UNSHARE 1
+#define HAVE_CLOCK_GETTIME 1
+#define HAVE_CLOCK_GETRES 1
+#define HAVE_CLOCK_SETTIME 1
+#define HAVE_CLOCK_NANOSLEEP 1
+#define HAVE_NANOSLEEP 1
+#define HAVE_DEVICE_MACROS 1
+#define SYS_SELECT_WITH_SYS_TIME 1
+#define HAVE_GETADDRINFO 1
+#define HAVE_GETNAMEINFO 1
+#define HAVE_STRUCT_TM_TM_ZONE 1
+#define HAVE_TM_ZONE 1
+#define HAVE_STRUCT_STAT_ST_RDEV 1
+#define HAVE_STRUCT_STAT_ST_BLKSIZE 1
+#define HAVE_STRUCT_STAT_ST_BLOCKS 1
+#define HAVE_STRUCT_PASSWD_PW_GECOS 1
+#define HAVE_STRUCT_PASSWD_PW_PASSWD 1
+#define HAVE_SIGINFO_T_SI_BAND 1
+#define HAVE_ADDRINFO 1
+#define HAVE_SOCKADDR_STORAGE 1
+#define HAVE_SOCKADDR_ALG 1
+#define HAVE_PROTOTYPES 1
+#define HAVE_SOCKETPAIR 1
+#define HAVE_GETHOSTBYNAME_R 1
+#define HAVE_GETHOSTBYNAME_R 1
+#define HAVE_GETHOSTBYNAME_R_6_ARG 1
+#define HAVE_GCC_ASM_FOR_X64 1
+#define DOUBLE_IS_LITTLE_ENDIAN_IEEE754 1
+#define HAVE_GCC_ASM_FOR_X87 1
+#define HAVE_ACOSH 1
+#define HAVE_ASINH 1
+#define HAVE_ATANH 1
+#define HAVE_ERF 1
+#define HAVE_ERFC 1
+#define HAVE_EXPM1 1
+#define HAVE_LOG1P 1
+#define HAVE_LOG2 1
+#define HAVE_DECL_RTLD_LAZY 1
+#define HAVE_DECL_RTLD_NOW 1
+#define HAVE_DECL_RTLD_GLOBAL 1
+#define HAVE_DECL_RTLD_LOCAL 1
+#define HAVE_DECL_RTLD_NODELETE 1
+#define HAVE_DECL_RTLD_NOLOAD 1
+#define HAVE_DECL_RTLD_DEEPBIND 1
+#define HAVE_DECL_RTLD_MEMBER 0
+#define HAVE_WCHAR_H 1
+#define SIZEOF_WCHAR_T 4
+#define HAVE_GETC_UNLOCKED 1
+#define HAVE_WORKING_TZSET 1
+#define HAVE_STAT_TV_NSEC 1
+#define HAVE_NCURSESW 1
+#define HAVE_PANELW 1
+#define HAVE_NCURSESW_CURSES_H 1
+#define HAVE_NCURSESW_NCURSES_H 1
+#define HAVE_NCURSESW_PANEL_H 1
+#define HAVE_CURSES_H 1
+#define HAVE_NCURSES_H 1
+#define HAVE_PANEL_H 1
+#define HAVE_TERM_H 1
+#define MVWDELCH_IS_EXPRESSION 1
+#define HAVE_CURSES_IS_PAD 1
+#define HAVE_CURSES_IS_TERM_RESIZED 1
+#define HAVE_CURSES_RESIZE_TERM 1
+#define HAVE_CURSES_RESIZETERM 1
+#define HAVE_CURSES_IMMEDOK 1
+#define HAVE_CURSES_SYNCOK 1
+#define HAVE_CURSES_WCHGAT 1
+#define HAVE_CURSES_FILTER 1
+#define HAVE_CURSES_HAS_KEY 1
+#define HAVE_CURSES_TYPEAHEAD 1
+#define HAVE_CURSES_USE_ENV 1
+#define HAVE_DEV_PTMX 1
+#define HAVE_SOCKLEN_T 1
+#define HAVE_COMPUTED_GOTOS 1
+#define Py_REMOTE_DEBUG 1
+#define HAVE_DIRENT_D_TYPE 1
+#define HAVE_GETRANDOM_SYSCALL 1
+#define HAVE_GETRANDOM 1
+#define HAVE_SHM_OPEN 1
+#define HAVE_SHM_UNLINK 1
+#define PY_SSL_DEFAULT_CIPHERS 1
+#define PY_BUILTIN_HASHLIB_HASHES "md5,sha1,sha2,sha3,blake2"
+#define _PYTHREAD_NAME_MAXLEN 15
+#define _Py_HACL_CAN_COMPILE_VEC128 1
+#define _Py_HACL_CAN_COMPILE_VEC256 1
+
+configure: exit 0
+
+### .buildozer/android/platform/build-arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/jpeg/change.log
+duplicates of the prior line unless the image height mod 16 was 1 or 2.
+
+Repair minor problems in VMS, BCC, MC6 makefiles.
+
+New configure script based on latest GNU Autoconf.
+
+Correct the list of include files needed by MetroWerks C for ccommand().
+
+Numerous small documentation updates.
+
+
+Version 6  2-Aug-95
+-------------------
+
+Progressive JPEG support: library can read and write full progressive JPEG
+files.  A "buffered image" mode supports incremental decoding for on-the-fly
+display of progressive images.  Simply recompiling an existing IJG-v5-based
+decoder with v6 should allow it to read progressive files, though of course
+without any special progressive display.
+
+New "jpegtran" application performs lossless transcoding between different
+JPEG formats; primarily, it can be used to convert baseline to progressive
+JPEG and vice versa.  In support of jpegtran, the library now allows lossless
+reading and writing of JPEG files as DCT coefficient arrays.  This ability
+may be of use in other applications.
+
+Notes for programmers:
+* We changed jpeg_start_decompress() to be able to suspend; this makes all
+decoding modes available to suspending-input applications.  However,
+existing applications that use suspending input will need to be changed
+to check the return value from jpeg_start_decompress().  You don't need to
+do anything if you don't use a suspending data source.
+* We changed the interface to the virtual array routines: access_virt_array
+routines now take a count of the number of rows to access this time.  The
+last parameter to request_virt_array routines is now interpreted as the
+maximum number of rows that may be accessed at once, but not necessarily
+the height of every access.
+
+
+Version 5b  15-Mar-95
+---------------------
+
+Correct bugs with grayscale images having v_samp_factor > 1.
+
+jpeg_write_raw_data() now supports output suspension.
+
+Correct bugs in "configure" script for case of compiling in
+a directory other than the one containing the source files.
+
+Repair bug in jquant1.c: sometimes didn't use as many colors as it could.
+
+Borland C makefile and jconfig file work under either MS-DOS or OS/2.
+
+Miscellaneous improvements to documentation.
+
+
+Version 5a  7-Dec-94
+--------------------
+
+Changed color conversion roundoff behavior so that grayscale values are
+represented exactly.  (This causes test image files to change.)
+
+Make ordered dither use 16x16 instead of 4x4 pattern for a small quality
+improvement.
+
+New configure script based on latest GNU Autoconf.
+Fix configure script to handle CFLAGS correctly.
+Rename *.auto files to *.cfg, so that configure script still works if
+file names have been truncated for DOS.
+
+Fix bug in rdbmp.c: didn't allow for extra data between header and image.
+
+Modify rdppm.c/wrppm.c to handle 2-byte raw PPM/PGM formats for 12-bit data.
+
+Fix several bugs in rdrle.c.
+
+NEED_SHORT_EXTERNAL_NAMES option was broken.
+
+Revise jerror.h/jerror.c for more flexibility in message table.
+
+Repair oversight in jmemname.c NO_MKTEMP case: file could be there
+but unreadable.
+
+
+Version 5  24-Sep-94
+--------------------
+
+Version 5 represents a nearly complete redesign and rewrite of the IJG
+software.  Major user-visible changes include:
+  * Automatic configuration simplifies installation for most Unix systems.
+  * A range of speed vs. image quality tradeoffs are supported.
+    This includes resizing of an image during decompression: scaling down
+    by a factor of 1/2, 1/4, or 1/8 is handled very efficiently.
+  * New programs rdjpgcom and wrjpgcom allow insertion and extraction
+    of text comments in a JPEG file.
+
+The application programmer's interface to the library has changed completely.
+Notable improvements include:
+  * We have eliminated the use of callback routines for handling the
+    uncompressed image data.  The application now sees the library as a
+    set of routines that it calls to read or write image data on a
+    scanline-by-scanline basis.
+  * The application image data is represented in a conventional interleaved-
+    pixel format, rather than as a separate array for each color channel.
+    This can save a copying step in many programs.
+  * The handling of compressed data has been cleaned up: the application can
+    supply routines to source or sink the compressed data.  It is possible to
+    suspend processing on source/sink buffer overrun, although this is not
+    supported in all operating modes.
+  * All static state has been eliminated from the library, so that multiple
+    instances of compression or decompression can be active concurrently.
+  * JPEG abbreviated datastream formats are supported, ie, quantization and
+    Huffman tables can be stored separately from the image data.
+  * And not only that, but the documentation of the library has improved
+    considerably!
+
+
+The last widely used release before the version 5 rewrite was version 4A of
+18-Feb-93.  Change logs before that point have been discarded, since they
+are not of much interest after the rewrite.
+
