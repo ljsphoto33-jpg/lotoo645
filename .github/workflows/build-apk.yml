@@ -3,7 +3,11 @@ name: Build Android APK
 on:
   push:
     branches: [ main, master ]
+    paths-ignore: [ 'logs/**' ]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -13,6 +17,11 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+
+      - name: free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost || true
+          df -h /
 
       - name: python
         uses: actions/setup-python@v5
@@ -25,8 +34,9 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             build-essential ccache git zip unzip openjdk-17-jdk \
             autoconf automake libtool libtool-bin pkg-config cmake \
-            zlib1g-dev libncurses-dev libncursesw6 libtinfo6 \
-            libffi-dev libssl-dev patch python3-dev
+            zlib1g-dev libncurses-dev libffi-dev libssl-dev patch python3-dev
+          sudo apt-get install -y libtinfo6 libncursesw6 || true
+          sudo apt-get install -y libtinfo5 libncurses5 || true
 
       - name: java home
         run: echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
@@ -35,6 +45,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip wheel setuptools
           python -m pip install "cython==0.29.36" buildozer
+          buildozer --version
 
       - name: cache
         uses: actions/cache@v4
@@ -48,7 +59,9 @@ jobs:
             buildozer-${{ runner.os }}-
 
       - name: build apk
-        run: buildozer -v android debug
+        run: |
+          set -o pipefail
+          buildozer -v android debug 2>&1 | tee build.log
 
       - name: list
         run: ls -lh bin/
@@ -61,13 +74,26 @@ jobs:
           if-no-files-found: error
           retention-days: 90
 
-      - name: upload logs on failure
+      - name: publish error log
         if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-logs
-          path: |
-            .buildozer/android/platform/build-*/build/other_builds/**/*.log
-            .buildozer/**/*.txt
-          if-no-files-found: ignore
-          retention-days: 14
+        run: |
+          mkdir -p logs
+          {
+            echo "=============================================="
+            echo " build failed at $(date -u)"
+            echo "=============================================="
+            echo
+            echo "----- last 400 lines of build.log -----"
+            tail -n 400 build.log 2>/dev/null || echo "(build.log not created)"
+            echo
+            echo "----- buildozer logs -----"
+            find .buildozer -name "*.log" -newermt "-2 hours" 2>/dev/null | head -5 | while read f; do
+              echo "### $f"; tail -n 120 "$f"; echo
+            done
+          } > logs/build-error.txt 2>&1
+          head -c 400000 logs/build-error.txt > logs/build-error.tmp && mv logs/build-error.tmp logs/build-error.txt
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f logs/build-error.txt
+          git commit -m "build error log [skip ci]" || exit 0
+          git push || echo "push failed"
