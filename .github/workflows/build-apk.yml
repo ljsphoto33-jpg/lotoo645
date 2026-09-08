@@ -1,0 +1,73 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: system packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            build-essential ccache git zip unzip openjdk-17-jdk \
+            autoconf automake libtool libtool-bin pkg-config cmake \
+            zlib1g-dev libncurses-dev libncursesw6 libtinfo6 \
+            libffi-dev libssl-dev patch python3-dev
+
+      - name: java home
+        run: echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
+
+      - name: buildozer
+        run: |
+          python -m pip install --upgrade pip wheel setuptools
+          python -m pip install "cython==0.29.36" buildozer
+
+      - name: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.buildozer
+            ~/.gradle
+            .buildozer
+          key: buildozer-${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
+          restore-keys: |
+            buildozer-${{ runner.os }}-
+
+      - name: build apk
+        run: buildozer -v android debug
+
+      - name: list
+        run: ls -lh bin/
+
+      - name: upload apk
+        uses: actions/upload-artifact@v4
+        with:
+          name: Lotto645-APK
+          path: bin/*.apk
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            .buildozer/android/platform/build-*/build/other_builds/**/*.log
+            .buildozer/**/*.txt
+          if-no-files-found: ignore
+          retention-days: 14
