@@ -48,16 +48,18 @@ jobs:
           python -m pip install "cython==0.29.36" buildozer
           buildozer --version
 
-      - name: cache
+      - name: cache sdk/ndk
         uses: actions/cache@v4
         with:
           path: |
             ~/.buildozer
             ~/.gradle
-            .buildozer
-          key: buildozer-${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
+          key: sdk-${{ runner.os }}-v2
           restore-keys: |
-            buildozer-${{ runner.os }}-
+            sdk-${{ runner.os }}-
+
+      - name: clean project build dir
+        run: rm -rf .buildozer bin
 
       - name: build apk
         run: |
