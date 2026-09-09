@@ -42,11 +42,15 @@ jobs:
       - name: java home
         run: echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
 
-      - name: buildozer
+      - name: buildozer + pinned python-for-android
         run: |
           python -m pip install --upgrade pip wheel setuptools
-          python -m pip install "cython==0.29.36" buildozer
+          python -m pip install "cython==0.29.36" "buildozer==1.5.0"
           buildozer --version
+          python -m pip download --no-deps -d /tmp/p4a "python-for-android==2024.1.21"
+          rm -rf ~/p4a-src && mkdir -p ~/p4a-src
+          unzip -qo /tmp/p4a/*.whl -d ~/p4a-src
+          PYTHONPATH=~/p4a-src python -m pythonforandroid.toolchain --version
 
       - name: cache sdk/ndk
         uses: actions/cache@v4
@@ -54,7 +58,7 @@ jobs:
           path: |
             ~/.buildozer
             ~/.gradle
-          key: sdk-${{ runner.os }}-v2
+          key: sdk-${{ runner.os }}-v3
           restore-keys: |
             sdk-${{ runner.os }}-
 
