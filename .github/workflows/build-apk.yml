@@ -51,6 +51,7 @@ jobs:
             python -m pip install "cython<3.0" "buildozer==1.5.0"
             python -m pip install --no-deps --target "$HOME/p4a-src" \
               "python-for-android==2024.1.21"
+            printf "install_reqs = ['appdirs', 'colorama>=0.3.3', 'jinja2', 'build', 'toml', 'packaging', 'setuptools', 'sh>=1.10,<2.0']\n" > "$HOME/p4a-src/setup.py"
             buildozer --version
             ls "$HOME/p4a-src"
           } 2>&1 | tee setup.log
