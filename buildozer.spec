@@ -13,7 +13,7 @@ source.exclude_patterns = shot_*.png,*.spec.bak
 
 version = 1.0
 
-requirements = python3,kivy==2.3.1,openssl,certifi
+requirements = python3,kivy,openssl
 
 orientation = portrait
 fullscreen = 0
@@ -24,10 +24,12 @@ android.presplash_color = #d7ebfb
 
 android.permissions = android.permission.INTERNET,android.permission.ACCESS_NETWORK_STATE
 
-android.api = 34
+android.api = 33
 android.minapi = 24
 android.ndk_api = 24
 android.accept_sdk_license = True
+
+p4a.source_dir = ~/p4a-src
 
 android.archs = arm64-v8a
 
