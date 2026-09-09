@@ -1,5 +1,5 @@
 ==============================================
- build failed at Wed Sep  9 00:50:23 UTC 2026
+ build failed at Wed Sep  9 01:32:49 UTC 2026
 ==============================================
 
 ----- last 400 lines of build.log -----
@@ -158,7 +158,7 @@ stty: 'standard input': Inappropriate ioctl for device
 [1m[INFO][0m:    [1m[32m# Installing pure Python modules[0m[39m
 [1m[INFO][0m:    *** PYTHON PACKAGE / PROJECT INSTALL STAGE FOR ARCH: arm64-v8a ***
 stty: 'standard input': Inappropriate ioctl for device
-[1m[90m[DEBUG][39m[0m:   [90m->[0m running pip3 install certifi chardet filetype idna requests six urllib3 --dry-run --break-system-packages --ignore-installed --disable-pip-version-check --only-binary=:all: --report /tmp/tmpizkvsxbg -q --platform=android_24_arm64_v8a --platform=android_24_aarch64 --python-version 3.14.2[0m
+[1m[90m[DEBUG][39m[0m:   [90m->[0m running pip3 install certifi chardet filetype idna requests six urllib3 --dry-run --break-system-packages --ignore-installed --disable-pip-version-check --only-binary=:all: --report /tmp/tmpr4yrks8o -q --platform=android_24_arm64_v8a --platform=android_24_aarch64 --python-version 3.14.2[0m
 [1m[INFO][0m:    Extra resolved pure python dependencies :
 [1m[INFO][0m:     
 [1m[INFO][0m:      [32mcharset-normalizer[37m : [1m3.5.1[0m
@@ -175,7 +175,7 @@ stty: 'standard input': Inappropriate ioctl for device
 [1m[90m[DEBUG][39m[0m:   	Collecting pip
 [1m[90m[DEBUG][39m[0m:   	  Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
 [1m[90m[DEBUG][39m[0m:   	Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
-[1m[90m[DEBUG][39m[0m:   	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m21.6 MB/s[0m  [33m0:00:00[0m
+[1m[90m[DEBUG][39m[0m:   	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m90.9 MB/s[0m  [33m0:00:00[0m
 [1m[90m[DEBUG][39m[0m:   	[?25hInstalling collected packages: pip
 [1m[90m[DEBUG][39m[0m:   	  Attempting uninstall: pip
 [1m[90m[DEBUG][39m[0m:   	    Found existing installation: pip 25.3
@@ -188,7 +188,7 @@ stty: 'standard input': Inappropriate ioctl for device
 [1m[90m[DEBUG][39m[0m:   	Collecting Cython
 [1m[90m[DEBUG][39m[0m:   	  Downloading cython-3.3.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (28 kB)
 [1m[90m[DEBUG][39m[0m:   	Downloading cython-3.3.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.5 MB)
-[1m[90m[DEBUG][39m[0m:   	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.5/3.5 MB[0m [31m30.8 MB/s[0m  [33m0:00:00[0m
+[1m[90m[DEBUG][39m[0m:   	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.5/3.5 MB[0m [31m103.7 MB/s[0m  [33m0:00:00[0m
 [1m[90m[DEBUG][39m[0m:   	[?25hInstalling collected packages: Cython
 [1m[90m[DEBUG][39m[0m:   	Successfully installed Cython-3.3.0
 [1m[90m[DEBUG][39m[0m:   Create directory /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/recipe/arm64-v8a__ndk_target_24/objects_recipe
@@ -200,7 +200,7 @@ stty: 'standard input': Inappropriate ioctl for device
 [1m[90m[DEBUG][39m[0m:   	Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/venv/lib/python3.14/site-packages/pip (python 3.14)
 [1m[90m[DEBUG][39m[0m:   	[31mERROR: charset_normalizer-3.5.1-cp314-cp314-android_24_arm64_v8a.whl is not a supported wheel on this platform.[0m[31m
 [1m[90m[DEBUG][39m[0m:   	[0m
-Exception in thread background thread for pid 58976:
+Exception in thread background thread for pid 58823:
 Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
     self.run()
@@ -279,11 +279,11 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 [0m[1;31m#     JAVA_HOME_11_X64 = '/usr/lib/jvm/temurin-11-jdk-amd64'[0m
 [0m[1;31m#     JAVA_HOME_25_X64 = '/usr/lib/jvm/temurin-25-jdk-amd64'[0m
 [0m[1;31m#     PKG_CONFIG_PATH = '/opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig'[0m
-[0m[1;31m#     GITHUB_PATH = '/home/runner/work/_temp/_runner_file_commands/add_path_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
-[0m[1;31m#     GITHUB_ACTION = '__run_5'[0m
+[0m[1;31m#     GITHUB_PATH = '/home/runner/work/_temp/_runner_file_commands/add_path_25082779-0926-4925-8456-533479e711a4'[0m
+[0m[1;31m#     GITHUB_ACTION = '__run_6'[0m
 [0m[1;31m#     JAVA_HOME = '/usr/lib/jvm/temurin-17-jdk-amd64'[0m
-[0m[1;31m#     GITHUB_RUN_NUMBER = '6'[0m
-[0m[1;31m#     RUNNER_NAME = 'GitHub Actions 1000000005'[0m
+[0m[1;31m#     GITHUB_RUN_NUMBER = '7'[0m
+[0m[1;31m#     RUNNER_NAME = 'GitHub Actions 1000000006'[0m
 [0m[1;31m#     GRADLE_HOME = '/usr/share/gradle-9.7.1'[0m
 [0m[1;31m#     GITHUB_REPOSITORY_OWNER_ID = '233521945'[0m
 [0m[1;31m#     ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE = '/opt/actionarchivecache'[0m
@@ -303,13 +303,13 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 [0m[1;31m#     PWD = '/home/runner/work/lotoo645/lotoo645'[0m
 [0m[1;31m#     PIPX_BIN_DIR = '/opt/pipx_bin'[0m
 [0m[1;31m#     LOGNAME = 'runner'[0m
-[0m[1;31m#     GITHUB_ARTIFACTS_LIST = '/home/runner/work/_temp/_runner_file_commands/artifacts_list_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
+[0m[1;31m#     GITHUB_ARTIFACTS_LIST = '/home/runner/work/_temp/_runner_file_commands/artifacts_list_25082779-0926-4925-8456-533479e711a4'[0m
 [0m[1;31m#     GITHUB_REPOSITORY_ID = '1360755319'[0m
 [0m[1;31m#     GITHUB_ACTIONS = 'true'[0m
 [0m[1;31m#     USE_BAZEL_FALLBACK_VERSION = 'silent:'[0m
 [0m[1;31m#     ANDROID_NDK_LATEST_HOME = '/usr/local/lib/android/sdk/ndk/29.0.14206865'[0m
-[0m[1;31m#     SYSTEMD_EXEC_PID = '2010'[0m
-[0m[1;31m#     GITHUB_SHA = '44c55ef1a25ae0d8091031a3b959a6b28d346784'[0m
+[0m[1;31m#     SYSTEMD_EXEC_PID = '1946'[0m
+[0m[1;31m#     GITHUB_SHA = 'e6a7e14c9f93102620ba93c0e24a2a5588f7a5ec'[0m
 [0m[1;31m#     GITHUB_WORKFLOW_REF = 'ljsphoto33-jpg/lotoo645/.github/workflows/build-apk.yml@refs/heads/main'[0m
 [0m[1;31m#     POWERSHELL_DISTRIBUTION_CHANNEL = 'GitHub-Actions-Linux'[0m
 [0m[1;31m#     RUNNER_ENVIRONMENT = 'github-hosted'[0m
@@ -321,21 +321,21 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 [0m[1;31m#     GITHUB_API_URL = 'https://api.github.com'[0m
 [0m[1;31m#     LANG = 'C.UTF-8'[0m
 [0m[1;31m#     GOROOT_1_25_X64 = '/opt/hostedtoolcache/go/1.25.14/x64'[0m
-[0m[1;31m#     RUNNER_TRACKING_ID = 'github_9a303c91-189b-4a2c-98f1-1244f3aecfa6'[0m
+[0m[1;31m#     RUNNER_TRACKING_ID = 'github_4c746391-8097-4066-ac08-d6ec6f98bdac'[0m
 [0m[1;31m#     RUNNER_ARCH = 'X64'[0m
 [0m[1;31m#     MEMORY_PRESSURE_WATCH = '/sys/fs/cgroup/system.slice/hosted-compute-agent.service/memory.pressure'[0m
 [0m[1;31m#     RUNNER_TEMP = '/home/runner/work/_temp'[0m
-[0m[1;31m#     GITHUB_STATE = '/home/runner/work/_temp/_runner_file_commands/save_state_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
+[0m[1;31m#     GITHUB_STATE = '/home/runner/work/_temp/_runner_file_commands/save_state_25082779-0926-4925-8456-533479e711a4'[0m
 [0m[1;31m#     EDGEWEBDRIVER = '/usr/local/share/edge_driver'[0m
 [0m[1;31m#     JAVA_HOME_21_X64 = '/usr/lib/jvm/temurin-21-jdk-amd64'[0m
-[0m[1;31m#     GITHUB_ENV = '/home/runner/work/_temp/_runner_file_commands/set_env_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
+[0m[1;31m#     GITHUB_ENV = '/home/runner/work/_temp/_runner_file_commands/set_env_25082779-0926-4925-8456-533479e711a4'[0m
 [0m[1;31m#     GITHUB_EVENT_PATH = '/home/runner/work/_temp/_github_workflow/event.json'[0m
-[0m[1;31m#     INVOCATION_ID = '09b30fb7acbb41539268418b72f30bd6'[0m
+[0m[1;31m#     INVOCATION_ID = '39811fc9bd6e45c8abdcdb850841f569'[0m
 [0m[1;31m#     GITHUB_EVENT_NAME = 'push'[0m
-[0m[1;31m#     GITHUB_RUN_ID = '34295850328'[0m
+[0m[1;31m#     GITHUB_RUN_ID = '34298851057'[0m
 [0m[1;31m#     JAVA_HOME_17_X64 = '/usr/lib/jvm/temurin-17-jdk-amd64'[0m
 [0m[1;31m#     ANDROID_NDK_HOME = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
-[0m[1;31m#     GITHUB_STEP_SUMMARY = '/home/runner/work/_temp/_runner_file_commands/step_summary_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
+[0m[1;31m#     GITHUB_STEP_SUMMARY = '/home/runner/work/_temp/_runner_file_commands/step_summary_25082779-0926-4925-8456-533479e711a4'[0m
 [0m[1;31m#     HOMEBREW_NO_AUTO_UPDATE = '1'[0m
 [0m[1;31m#     GITHUB_ACTOR = 'ljsphoto33-jpg'[0m
 [0m[1;31m#     NVM_DIR = '/home/runner/.nvm'[0m
@@ -354,13 +354,13 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 [0m[1;31m#     ANDROID_SDK_ROOT = '/usr/local/lib/android/sdk'[0m
 [0m[1;31m#     VCPKG_INSTALLATION_ROOT = '/usr/local/share/vcpkg'[0m
 [0m[1;31m#     GITHUB_ACTOR_ID = '233521945'[0m
-[0m[1;31m#     ACTIONS_ORCHESTRATION_ID = '4bb1ba27-4a3b-4e4b-b5b1-72e93c13bdde.build.__default'[0m
+[0m[1;31m#     ACTIONS_ORCHESTRATION_ID = '18c85ee9-5835-46f9-9a36-b678b484ded6.build.__default'[0m
 [0m[1;31m#     RUNNER_TOOL_CACHE = '/opt/hostedtoolcache'[0m
 [0m[1;31m#     ImageVersion = '20260831.293.1'[0m
 [0m[1;31m#     Python3_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
 [0m[1;31m#     DOTNET_NOLOGO = '1'[0m
-[0m[1;31m#     GITHUB_ARTIFACTS = '/home/runner/work/_temp/_runner_file_commands/artifacts_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
-[0m[1;31m#     GITHUB_WORKFLOW_SHA = '44c55ef1a25ae0d8091031a3b959a6b28d346784'[0m
+[0m[1;31m#     GITHUB_ARTIFACTS = '/home/runner/work/_temp/_runner_file_commands/artifacts_25082779-0926-4925-8456-533479e711a4'[0m
+[0m[1;31m#     GITHUB_WORKFLOW_SHA = 'e6a7e14c9f93102620ba93c0e24a2a5588f7a5ec'[0m
 [0m[1;31m#     GOROOT_1_24_X64 = '/opt/hostedtoolcache/go/1.24.13/x64'[0m
 [0m[1;31m#     GITHUB_REF_NAME = 'main'[0m
 [0m[1;31m#     GITHUB_JOB = 'build'[0m
@@ -370,10 +370,10 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 [0m[1;31m#     GOROOT_1_26_X64 = '/opt/hostedtoolcache/go/1.26.7/x64'[0m
 [0m[1;31m#     GITHUB_REPOSITORY = 'ljsphoto33-jpg/lotoo645'[0m
 [0m[1;31m#     Python2_ROOT_DIR = '/opt/hostedtoolcache/Python/3.11.16/x64'[0m
-[0m[1;31m#     CHROME_BIN = '/usr/bin/google-chrome'[0m
 [0m[1;31m#     ANDROID_NDK_ROOT = '/usr/local/lib/android/sdk/ndk/27.3.13750724'[0m
+[0m[1;31m#     CHROME_BIN = '/usr/bin/google-chrome'[0m
 [0m[1;31m#     GITHUB_RETENTION_DAYS = '90'[0m
-[0m[1;31m#     JOURNAL_STREAM = '9:12495'[0m
+[0m[1;31m#     JOURNAL_STREAM = '9:9933'[0m
 [0m[1;31m#     RUNNER_WORKSPACE = '/home/runner/work/lotoo645'[0m
 [0m[1;31m#     GITHUB_ACTION_REPOSITORY = ''[0m
 [0m[1;31m#     HCA_CLOUD_PROVIDER = 'azure'[0m
@@ -389,7 +389,7 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 [0m[1;31m#     ENABLE_RUNNER_TRACING = 'true'[0m
 [0m[1;31m#     GITHUB_WORKFLOW = 'Build Android APK'[0m
 [0m[1;31m#     DEBIAN_FRONTEND = 'noninteractive'[0m
-[0m[1;31m#     GITHUB_OUTPUT = '/home/runner/work/_temp/_runner_file_commands/set_output_787c9f86-e8f2-4348-a583-1e7fb4605e1c'[0m
+[0m[1;31m#     GITHUB_OUTPUT = '/home/runner/work/_temp/_runner_file_commands/set_output_25082779-0926-4925-8456-533479e711a4'[0m
 [0m[1;31m#     AGENT_TOOLSDIRECTORY = '/opt/hostedtoolcache'[0m
 [0m[1;31m#     _ = '/opt/hostedtoolcache/Python/3.11.16/x64/bin/buildozer'[0m
 [0m[1;31m#     PACKAGES_PATH = '/home/runner/.buildozer/android/packages'[0m
@@ -406,7 +406,7 @@ Using pip 26.2.1 from /home/runner/work/lotoo645/lotoo645/.buildozer/android/pla
 
 ----- buildozer logs -----
 ### .buildozer/android/platform/build-arm64-v8a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3/config.log
-Invoked as: /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3/configure --host=aarch64-linux-android --prefix=/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3 --disable-tcl
+Invoked as: /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3/configure --disable-tcl --host=aarch64-linux-android --prefix=/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/sqlite3/arm64-v8a__ndk_target_24/sqlite3
 Tclsh: /usr/bin/tclsh
 Failed: ccache /usr/bin/ccache /home/runner/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -c -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -DANDROID -I/home/runner/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/other_builds/python3/arm64-v8a__ndk_target_24/python3/android-build/android-root/include/python3.14 conftest__.c -o conftest__.o
 conftest__.c:3:15: error: '_x' declared as an array with a negative size
@@ -425,7 +425,7 @@ return 0;
 Failed: ccache /usr/bin/ccache /home/runner/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -L/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/libs_collections/lotto645/arm64-v8a -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC conftest__.c -o conftest__
 ld.lld: error: undefined symbol: localtime_s
 >>> referenced by conftest__.c
->>>               /tmp/conftest__-b6242e.o:(main)
+>>>               /tmp/conftest__-f4bf41.o:(main)
 >>> did you mean: localtime_r
 >>> defined in: /home/runner/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/24/libc.so
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
@@ -441,7 +441,7 @@ return 0;
 Failed: ccache /usr/bin/ccache /home/runner/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC -L/home/runner/work/lotoo645/lotoo645/.buildozer/android/platform/build-arm64-v8a/build/libs_collections/lotto645/arm64-v8a -target aarch64-linux-android24 -fomit-frame-pointer -march=armv8-a -fPIC conftest__.c -o conftest__
 ld.lld: error: undefined symbol: deflate
 >>> referenced by conftest__.c
->>>               /tmp/conftest__-80109f.o:(main)
+>>>               /tmp/conftest__-54930e.o:(main)
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 child process exited abnormally
 ============
@@ -470,7 +470,7 @@ conftest__.c:1:13: note: 'ceil' is a builtin with type 'double (double)'
 1 warning generated.
 ld.lld: error: undefined symbol: ceil
 >>> referenced by conftest__.c
->>>               /tmp/conftest__-3b6415.o:(main)
+>>>               /tmp/conftest__-7a62af.o:(main)
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 child process exited abnormally
 ============
