@@ -1,8 +1,103 @@
 ==============================================
- build failed at Wed Sep  9 02:20:32 UTC 2026
+ build failed at Wed Sep  9 02:31:08 UTC 2026
 ==============================================
 
+----- setup.log (last 120 lines) -----
++ python -m pip install --upgrade pip wheel setuptools
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages (26.2.1)
+Collecting wheel
+  Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages (79.0.1)
+Collecting setuptools
+  Downloading setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting packaging>=24.0 (from wheel)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+Downloading setuptools-84.0.0-py3-none-any.whl (818 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 818.2/818.2 kB 14.4 MB/s  0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Installing collected packages: setuptools, packaging, wheel
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 79.0.1
+    Uninstalling setuptools-79.0.1:
+      Successfully uninstalled setuptools-79.0.1
+
+Successfully installed packaging-26.3 setuptools-84.0.0 wheel-0.48.0
++ python -m pip install 'cython<3.0' buildozer==1.5.0
+Collecting cython<3.0
+  Downloading Cython-0.29.37-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (3.1 kB)
+Collecting buildozer==1.5.0
+  Downloading buildozer-1.5.0-py3-none-any.whl.metadata (139 kB)
+Collecting pexpect (from buildozer==1.5.0)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting virtualenv (from buildozer==1.5.0)
+  Downloading virtualenv-21.7.9-py3-none-any.whl.metadata (3.5 kB)
+Collecting sh (from buildozer==1.5.0)
+  Downloading sh-2.4.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting ptyprocess>=0.5 (from pexpect->buildozer==1.5.0)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv->buildozer==1.5.0)
+  Downloading distlib-0.4.3-py2.py3-none-any.whl.metadata (5.3 kB)
+Collecting filelock<4,>=3.24.2 (from virtualenv->buildozer==1.5.0)
+  Downloading filelock-3.32.6-py3-none-any.whl.metadata (2.0 kB)
+Collecting platformdirs<5,>=3.9.1 (from virtualenv->buildozer==1.5.0)
+  Downloading platformdirs-4.11.8-py3-none-any.whl.metadata (5.5 kB)
+Collecting python-discovery>=1.6 (from virtualenv->buildozer==1.5.0)
+  Downloading python_discovery-1.6.0-py3-none-any.whl.metadata (5.1 kB)
+Downloading buildozer-1.5.0-py3-none-any.whl (86 kB)
+Downloading Cython-0.29.37-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 22.8 MB/s  0:00:00
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Downloading sh-2.4.0-py3-none-any.whl (48 kB)
+Downloading virtualenv-21.7.9-py3-none-any.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 84.4 MB/s  0:00:00
+Downloading distlib-0.4.3-py2.py3-none-any.whl (470 kB)
+Downloading filelock-3.32.6-py3-none-any.whl (100 kB)
+Downloading platformdirs-4.11.8-py3-none-any.whl (24 kB)
+Downloading python_discovery-1.6.0-py3-none-any.whl (38 kB)
+Installing collected packages: ptyprocess, distlib, sh, platformdirs, pexpect, filelock, cython, python-discovery, virtualenv, buildozer
+
+Successfully installed buildozer-1.5.0 cython-0.29.37 distlib-0.4.3 filelock-3.32.6 pexpect-4.9.0 platformdirs-4.11.8 ptyprocess-0.7.0 python-discovery-1.6.0 sh-2.4.0 virtualenv-21.7.9
++ python -m pip install --no-deps --target /home/runner/p4a-src python-for-android==2024.1.21
+Collecting python-for-android==2024.1.21
+  Downloading python_for_android-2024.1.21-py3-none-any.whl.metadata (9.1 kB)
+Downloading python_for_android-2024.1.21-py3-none-any.whl (543 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 543.4/543.4 kB 11.7 MB/s  0:00:00
+Installing collected packages: python-for-android
+Successfully installed python-for-android-2024.1.21
++ buildozer --version
+[0m[1;34m# Check configuration tokens[0m
+Buildozer 1.5.0
++ ls /home/runner/p4a-src
+bin
+ci
+python_for_android-2024.1.21.dist-info
+pythonforandroid
+
 ----- last 400 lines of build.log -----
-(build.log not created)
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Ensure build layout[0m
+[0m[1;30m# Create directory /home/runner/.buildozer[0m
+[0m[1;30m# Create directory /home/runner/.buildozer/cache[0m
+[0m[1;30m# Create directory /home/runner/work/lotoo645/lotoo645/.buildozer[0m
+[0m[1;30m# Create directory /home/runner/work/lotoo645/lotoo645/bin[0m
+[0m[1;30m# Create directory /home/runner/work/lotoo645/lotoo645/.buildozer/applibs[0m
+[0m[1;30m# Create directory /home/runner/.buildozer/android/platform/android/platform[0m
+[0m[1;30m# Create directory /home/runner/work/lotoo645/lotoo645/.buildozer/android/platform[0m
+[0m[1;30m# Create directory /home/runner/work/lotoo645/lotoo645/.buildozer/android/app[0m
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Preparing build[0m
+[0m[1;34m# Check requirements for android[0m
+[0m[1;30m# Search for Git (git)[0m
+[0m[1;30m#  -> found at /usr/bin/git[0m
+[0m[1;30m# Search for Cython (cython)[0m
+[0m[1;30m#  -> found at /opt/hostedtoolcache/Python/3.11.16/x64/bin/cython[0m
+[0m[1;30m# Search for Java compiler (javac)[0m
+[0m[1;30m#  -> found at /usr/lib/jvm/temurin-17-jdk-amd64/bin/javac[0m
+[0m[1;30m# Search for Java keytool (keytool)[0m
+[0m[1;30m#  -> found at /usr/lib/jvm/temurin-17-jdk-amd64/bin/keytool[0m
+[0m[1;34m# Install platform[0m
+[0m[1;31m# Failed to read python-for-android setup.py at /home/runner/p4a-src/setup.py[0m
 
 ----- buildozer logs -----
