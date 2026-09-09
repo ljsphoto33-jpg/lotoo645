@@ -44,13 +44,16 @@ jobs:
 
       - name: buildozer + pinned python-for-android
         run: |
-          python -m pip install --upgrade pip wheel setuptools
-          python -m pip install "cython==0.29.36" "buildozer==1.5.0"
-          buildozer --version
-          python -m pip download --no-deps -d /tmp/p4a "python-for-android==2024.1.21"
-          rm -rf ~/p4a-src && mkdir -p ~/p4a-src
-          unzip -qo /tmp/p4a/*.whl -d ~/p4a-src
-          PYTHONPATH=~/p4a-src python -m pythonforandroid.toolchain --version
+          set -o pipefail
+          {
+            set -x
+            python -m pip install --upgrade pip wheel setuptools
+            python -m pip install "cython<3.0" "buildozer==1.5.0"
+            python -m pip install --no-deps --target "$HOME/p4a-src" \
+              "python-for-android==2024.1.21"
+            buildozer --version
+            ls "$HOME/p4a-src"
+          } 2>&1 | tee setup.log
 
       - name: cache sdk/ndk
         uses: actions/cache@v4
@@ -89,6 +92,9 @@ jobs:
             echo "=============================================="
             echo " build failed at $(date -u)"
             echo "=============================================="
+            echo
+            echo "----- setup.log (last 120 lines) -----"
+            tail -n 120 setup.log 2>/dev/null || echo "(setup.log not created)"
             echo
             echo "----- last 400 lines of build.log -----"
             tail -n 400 build.log 2>/dev/null || echo "(build.log not created)"
