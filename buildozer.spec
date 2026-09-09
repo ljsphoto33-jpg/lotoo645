@@ -13,7 +13,7 @@ source.exclude_patterns = shot_*.png,*.spec.bak
 
 version = 1.0
 
-requirements = python3,kivy==2.3.1,openssl,certifi,idna,urllib3,chardet,requests
+requirements = python3,kivy==2.3.1,openssl,certifi
 
 orientation = portrait
 fullscreen = 0
